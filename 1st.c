@@ -1,0 +1,4 @@
+#include<stdio.h>
+int main(){
+    printf("size of int %lu ", sizeof(int));
+}
