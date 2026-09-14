@@ -1,20 +1,28 @@
+# 📘 C PROGRAMMING — COMPLETE NOTES
+
+---
+
+# 13. C89 / C90 — 32 KEYWORDS
+
+C89/C90 contains a total of **32 keywords**.
 
 ## TOTAL = 32 KEYWORDS
 
-```text
-Data Types          → 5
-Decision Making     → 5
-Looping             → 3
-Jump Statements     → 4
-Storage Class       → 4
-Type Modifiers      → 4
-User-Defined Types  → 4
-Other               → 3
-                     ----
-TOTAL               → 32
-```
+| Category           | Number of Keywords |
+| ------------------ | -----------------: |
+| Data Types         |                  5 |
+| Decision Making    |                  5 |
+| Looping            |                  3 |
+| Jump Statements    |                  4 |
+| Storage Class      |                  4 |
+| Type Modifiers     |                  4 |
+| User-Defined Types |                  4 |
+| Other              |                  3 |
+| **TOTAL**          |             **32** |
 
-### Complete 32 Keywords
+---
+
+## Complete 32 Keywords
 
 ```text
 auto
@@ -53,17 +61,17 @@ while
 
 ### Important
 
-`class` **C89 ka keyword nahi hai**.
+`class` is **not a C89 keyword**.
 
-`class` **C++ ka keyword hai**.
+`class` is a **C++ keyword**.
 
 ---
 
 # 14. COMPILER
 
-Compiler source code ko compile karke object/executable code generate karta hai.
+A **Compiler** translates source code into object code or executable code.
 
-### Basic Flow
+## Basic Flow
 
 ```text
 Source Code
@@ -75,7 +83,7 @@ Object / Executable Code
 Run
 ```
 
-### Examples
+## Examples
 
 → C
 → C++
@@ -84,9 +92,9 @@ Run
 
 # 15. INTERPRETER
 
-Interpreter source program ko execution ke saath process/translate karta hai.
+An **Interpreter** processes and executes source code at runtime.
 
-### Simplified Flow
+## Simplified Flow
 
 ```text
 Source Code
@@ -96,35 +104,42 @@ Interpreter
 Execute
 ```
 
-### Example
+## Example
 
 → Python
 
 ### Important Note
 
-Modern programming language implementations pure compiler ya pure interpreter nahi hoti. Compilation, bytecode aur JIT techniques ka combination bhi ho sakta hai.
+Modern programming language implementations are not always purely compiler-based or purely interpreter-based.
+
+They may use a combination of:
+
+→ Compilation
+→ Bytecode
+→ Interpretation
+→ JIT (Just-In-Time) Compilation
 
 ---
 
 # 16. COMPILER vs INTERPRETER
 
-| Compiler                                        | Interpreter                                                      |
-| ----------------------------------------------- | ---------------------------------------------------------------- |
-| Program ko execution se pehle compile karta hai | Translation/execution runtime ke saath closely combined hoti hai |
-| Object/executable code generate kar sakta hai   | Runtime par execution hoti hai                                   |
-| Generally compiled code fast execute hota hai   | Traditionally execution comparatively slower ho sakti hai        |
-| Compilation phase mein errors mil sakte hain    | Runtime par errors mil sakte hain                                |
-| C, C++                                          | Python, JavaScript                                               |
+| Compiler                                                 | Interpreter                                         |
+| -------------------------------------------------------- | --------------------------------------------------- |
+| Usually compiles/translates the program before execution | Processes/executes code at runtime                  |
+| Can generate object/executable code                      | Usually executes code through a runtime/interpreter |
+| Compiled code generally executes faster                  | Traditional interpretation can be slower            |
+| Many errors can be detected during compilation           | Some errors appear during execution                 |
+| Examples: C, C++                                         | Examples: Python, JavaScript                        |
 
 ---
 
 # 17. ASCII
 
-### ASCII → American Standard Code for Information Interchange
+## ASCII → American Standard Code for Information Interchange
 
-ASCII characters ko numerical codes assign karta hai.
+ASCII assigns numerical codes to standard characters.
 
-### Important ASCII Values
+## Important ASCII Values
 
 ```text
 A → 65
@@ -134,37 +149,38 @@ a → 97
 z → 122
 ```
 
-### Ranges
+## Ranges
 
 ```text
 A-Z → 65-90
+
 a-z → 97-122
 ```
 
-Original ASCII **7-bit** standard hai aur 128 character codes define karta hai.
+Original ASCII is a **7-bit character encoding standard** and defines **128 character codes**.
 
 ---
 
 # 18. ASSEMBLY LANGUAGE
 
-Assembly Language ek **low-level programming language** hai.
+Assembly Language is a **low-level programming language**.
 
-### File Extension
+## File Extension
 
 ```text
 .asm
 ```
 
-### Example
+## Example
 
 ```asm
 MOV AX, 10
 ADD AX, 20
 ```
 
-Assembly source ko **Assembler** object/machine code mein translate karta hai.
+Assembly source code is translated into object/machine code by an **Assembler**.
 
-### Flow
+## Flow
 
 ```text
 Assembly Code
@@ -178,15 +194,15 @@ Object Code
 
 # 19. .OBJ → BINARY
 
-`.obj` generally **Object File** ko represent karta hai.
+`.obj` generally represents an **Object File**.
 
-Object file mein machine-level code/data ho sakta hai.
+An object file may contain machine-level code and/or data.
 
-### Important
+## Important
 
-`.obj` directly executable hona zaroori nahi hai.
+`.obj` does **not necessarily mean a directly executable file**.
 
-### Flow
+## Flow
 
 ```text
 Source Code
@@ -204,21 +220,23 @@ Executable
 
 # 20. LOADER
 
-Loader executable program ko memory mein load karta hai.
+A **Loader** loads an executable program into memory so that it can be executed.
 
-### Windows
+## Windows
 
 ```text
 .exe
 ```
 
-### Unix / Linux
+## Unix / Linux
 
 ```text
 a.out
 ```
 
-### Basic Flow
+`a.out` is a traditional executable filename used by some Unix/Linux toolchains.
+
+## Basic Flow
 
 ```text
 Executable
@@ -238,16 +256,14 @@ Program Execution
 
 ## MCU → Microcontroller Unit
 
-Generally ek single chip mein:
+An MCU generally integrates multiple components on a single chip:
 
 → CPU
 → Memory
 → I/O
 → Peripherals
 
-integrated hote hain.
-
-### Common Uses
+## Common Uses
 
 → Embedded Systems
 → Sensors
@@ -260,31 +276,29 @@ integrated hote hain.
 
 ## MPU → Microprocessor Unit
 
-MPU generally processing core provide karta hai.
+An MPU generally provides the processor/core.
 
-System architecture ke according external:
+Depending on the system architecture, external components may be required, such as:
 
 → Memory
 → Peripherals
 → I/O
 
-ki requirement ho sakti hai.
+## Common Uses
 
-### Common Uses
-
-→ General-purpose Computing
+→ General-Purpose Computing
 → Embedded Linux Systems
 → Advanced Computing Systems
 
 ---
 
-# 22. SOC / SoC
+# 22. SoC / SOC
 
-### SoC → System on Chip
+## SoC → System on Chip
 
-SoC ek single chip par multiple system components integrate kar sakta hai.
+An SoC integrates multiple system components into a **single chip**.
 
-### Possible Components
+## Possible Components
 
 → CPU
 → GPU
@@ -297,11 +311,11 @@ SoC ek single chip par multiple system components integrate kar sakta hai.
 
 # 23. OTA
 
-### OTA → Over-The-Air
+## OTA → Over-The-Air
 
-OTA ka meaning hai wireless/network connection ke through software ya firmware update karna.
+OTA means updating software or firmware through a wireless/network connection.
 
-### Flow
+## Flow
 
 ```text
 Internet / Network
@@ -313,7 +327,7 @@ Internet / Network
 New Firmware / Software
 ```
 
-### Common Uses
+## Common Uses
 
 → Smartphones
 → IoT Devices
@@ -325,47 +339,53 @@ New Firmware / Software
 
 # 24. INTERPRETER — STATIC & DYNAMIC
 
-Original Note:
+## Original Note
 
 ```text
 Interpreter
 
 1. Static
+
 2. Dynamic
+
    (Read Real Time)
 ```
 
-### Correction
+## Correction
 
-**Static** aur **Dynamic** interpreter ke standard two types nahi hain.
+**Static** and **Dynamic** are not standard two types of interpreters.
 
-Ye terms mainly **typing, analysis aur runtime behavior** ke context mein use hoti hain.
+These terms are mainly used in the context of:
+
+→ Typing
+→ Analysis
+→ Runtime Behavior
 
 ---
 
 ## Static
 
-Information/analysis ko compile time par determine/check kiya ja sakta hai.
+Information or analysis can be determined or checked before runtime, often during compilation.
 
 ### Static Typing
 
-→ Type checking mainly compile time par hoti hai.
+→ Type checking is mainly performed at compile time.
 
 ---
 
 ## Dynamic
 
-Information/runtime behavior execution ke time determine ho sakta hai.
+Information or behavior can be determined during program execution.
 
 ### Dynamic Typing
 
-→ Type checking mainly runtime par hoti hai.
+→ Type checking is mainly performed at runtime.
 
 ---
 
 # 25. C PROGRAM EXECUTION FLOW
 
-Complete basic flow:
+## Complete Basic Flow
 
 ```text
 C Source Code
@@ -398,31 +418,39 @@ Program Execution
 
 # 26. QUICK REVISION
 
+## Important Full Forms
+
 ```text
-MCU  → Microcontroller Unit
+MCU   → Microcontroller Unit
 
-MPU  → Microprocessor Unit
+MPU   → Microprocessor Unit
 
-CPU  → Central Processing Unit
+CPU   → Central Processing Unit
 
-ALU  → Arithmetic Logic Unit
+ALU   → Arithmetic Logic Unit
 
-SoC  → System on Chip
+SoC   → System on Chip
 
 ASCII → American Standard Code for Information Interchange
 
-OTA  → Over-The-Air
+OTA   → Over-The-Air
 ```
 
-### Electronics
+---
+
+## Electronics
 
 ```text
 L → Inductor
+
 C → Capacitor
+
 R → Resistor
 ```
 
-### File Extensions
+---
+
+## File Extensions
 
 ```text
 .asm → Assembly Source File
@@ -434,17 +462,23 @@ R → Resistor
 a.out → Common Unix/Linux executable name
 ```
 
-### ASCII
+---
+
+## ASCII
 
 ```text
 A → 65
+
 Z → 90
 
 a → 97
+
 z → 122
 ```
 
-### C89/C90
+---
+
+## C89/C90
 
 ```text
 32 Keywords
@@ -502,4 +536,6 @@ Internet
 Artificial Intelligence
 ```
 
-# END OF NOTES
+---
+
+# 📌 END OF NOTES

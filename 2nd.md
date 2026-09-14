@@ -2,13 +2,13 @@
 
 ---
 
-## 1. INTRODUCTION TO MCU
+# 1. INTRODUCTION TO MCU
 
-### MCU → Microcontroller Unit
+## MCU → Microcontroller Unit
 
 A **Microcontroller** is a small computer system integrated into a single chip.
 
-### MCU ke Main Components
+### Main Components of an MCU
 
 → CPU
 → Memory
@@ -19,13 +19,13 @@ A **Microcontroller** is a small computer system integrated into a single chip.
 
 ---
 
-## 2. CPU
+# 2. CPU
 
-### CPU → Central Processing Unit
+## CPU → Central Processing Unit
 
-CPU computer/system ka **main processing unit** hota hai.
+The CPU is the **main processing unit** of a computer/system.
 
-### CPU ke Major Components
+### Major Components of CPU
 
 → ALU
 → Control Unit
@@ -33,11 +33,11 @@ CPU computer/system ka **main processing unit** hota hai.
 
 ---
 
-## 3. ALU
+# 3. ALU
 
-### ALU → Arithmetic Logic Unit
+## ALU → Arithmetic Logic Unit
 
-ALU ka main work:
+The main functions of the ALU are:
 
 → Arithmetic Operations
 → Logical Operations
@@ -47,7 +47,7 @@ ALU ka main work:
 
 # 4. LOGIC GATES
 
-Logic Gates digital circuits ke **basic building blocks** hote hain.
+Logic Gates are the **basic building blocks of digital circuits**.
 
 ### Types of Logic Gates
 
@@ -63,7 +63,7 @@ Logic Gates digital circuits ke **basic building blocks** hote hain.
 
 # 5. LINUX
 
-Linux ek **open-source operating system kernel** hai.
+Linux is an **open-source operating system kernel**.
 
 ### Linux-based Distributions
 
@@ -73,9 +73,9 @@ Linux ek **open-source operating system kernel** hai.
 
 ---
 
-# 6. C PROGRAMMING VERSION
+# 6. C PROGRAMMING VERSIONS
 
-### C Language ka Evolution / Sankraman
+## Evolution of C Language
 
 ```text
 C89 / C90
@@ -91,17 +91,21 @@ C23
 
 ### Important Correction
 
-Original notes mein:
+Original notes:
 
 ```text
 C89
+
 C99 (ANCIC)
+
 C08
+
 C11
+
 C24
 ```
 
-Correct versions:
+Correct C standards:
 
 → C89 / C90
 → C99
@@ -109,21 +113,23 @@ Correct versions:
 → C17
 → C23
 
-**Note:** C08 aur C24 standard C versions nahi hain.
+**Note:** C08 and C24 are not standard names for C language versions.
+
+**ANSI** → American National Standards Institute
 
 ---
 
 # 7. DATA TYPE
 
-**Data Type** batata hai ki variable mein kis type ka data store hoga.
+A **Data Type** tells us what type of data a variable can store.
 
 ### Basic C Data Types
 
-→ int
-→ float
-→ double
-→ char
-→ void
+→ `int`
+→ `float`
+→ `double`
+→ `char`
+→ `void`
 
 ---
 
@@ -131,30 +137,30 @@ Correct versions:
 
 ## 8.1 Natural Number
 
-Natural Numbers generally:
+Natural Numbers are generally:
 
 ```text
 1, 2, 3, 4, 5, ... N
 ```
 
-**Note:** Kuch mathematical conventions mein `0` ko bhi Natural Number maana jata hai.
+**Note:** In some mathematical conventions, `0` is also considered a Natural Number.
 
 ---
 
 ## 8.2 Zero (0)
 
-### Original Note:
+### Original Note
 
 **"0 is Artificial Number"**
 
-### Correction:
+### Correction
 
-0 ko Artificial Number nahi kaha jata.
+0 is **not** called an Artificial Number.
 
-`0`:
+`0` is:
 
-→ Integer hai
-→ Whole Number hai
+→ An Integer
+→ A Whole Number
 
 ---
 
@@ -166,7 +172,7 @@ Original concept:
 (-) , 0 , (+)
 ```
 
-Real Numbers mein include hote hain:
+Real Numbers include:
 
 → Negative Numbers
 → Zero
@@ -183,7 +189,7 @@ Real Numbers mein include hote hain:
 4.75
 ```
 
-Real Numbers ko `ℝ` se represent kiya jata hai.
+Real Numbers are represented by **ℝ**.
 
 ---
 
@@ -214,58 +220,63 @@ Where:
 
 # 9. FUNDAMENTALS OF DATA TYPES
 
-## 9.1 int
+## 9.1 `int`
 
-`int` integer values store karta hai.
+`int` is used to store integer values.
 
 ### Examples
 
 ```c
 int age = 20;
+
 int number = -10;
 ```
 
-### Common 4-byte int Range
+### Common 4-byte `int` Range
 
 ```text
 -2,147,483,648
+
         to
+
  2,147,483,647
 ```
 
-**Note:** Exact range implementation/system par depend karti hai.
+**Note:** The exact range depends on the implementation/system.
 
 ---
 
-## 9.2 float
+## 9.2 `float`
 
-`float` floating-point numbers store karta hai.
+`float` is used to store floating-point numbers.
 
-Original note:
+### Original Note
 
 ```text
 float = (+0.e) power 6
+
 0.000001
 ```
 
 ### Correction
 
-Typical `float` approximately **6–7 decimal digits of precision** provide karta hai.
+A typical `float` provides approximately **6–7 decimal digits of precision**.
 
 ### Example
 
 ```c
 float marks = 85.5;
+
 float price = 99.99;
 ```
 
 ---
 
-## 9.3 char
+## 9.3 `char`
 
-`char` ek **single character** store karta hai.
+`char` is used to store a **single character**.
 
-Original examples:
+### Original Examples
 
 ```text
 $ # % ^ * & ^
@@ -288,9 +299,9 @@ $ # % ^ * & ^
 
 ---
 
-## 9.4 void
+## 9.4 `void`
 
-Original note:
+### Original Note
 
 ```text
 void = None (Not a Number)
@@ -298,9 +309,7 @@ void = None (Not a Number)
 
 ### Correction
 
-`void` ka meaning relevant context mein:
-
-**No Value / No Type**
+`void` means **No Value / No Type**, depending on the context.
 
 ### Example
 
@@ -311,24 +320,26 @@ void display()
 }
 ```
 
-Yeh function koi value return nahi karta.
+This function does not return a value.
 
 ---
 
 # 10. TYPE MODIFIERS
 
-C mein important Type Modifiers:
+Important Type Modifiers in C:
 
 → `signed`
 → `unsigned`
 → `short`
 → `long`
 
-### Example
+### Examples
 
 ```c
 unsigned int age;
+
 long int population;
+
 short int number;
 ```
 
@@ -336,38 +347,44 @@ short int number;
 
 # 11. TYPE QUALIFIERS
 
-Original note mein:
+### Original Note
 
 ```text
 Quakufier
+
 → Short
+
 → long
+
 → Restrict
+
 → extern
 ```
 
 ### Correct Concept
 
-C ke important Type Qualifiers:
+Important Type Qualifiers in C are:
 
 → `const`
 → `volatile`
 → `restrict`
 
-### Important
+### Important Classification
 
-| Keyword  | Category                |
-| -------- | ----------------------- |
-| short    | Type Modifier           |
-| long     | Type Modifier           |
-| extern   | Storage-Class Specifier |
-| restrict | Type Qualifier          |
+| Keyword    | Category                |
+| ---------- | ----------------------- |
+| `short`    | Type Modifier           |
+| `long`     | Type Modifier           |
+| `extern`   | Storage-Class Specifier |
+| `restrict` | Type Qualifier          |
 
 ---
 
-## 11.1 const
+## 11.1 `const`
 
-Variable ki value ko modify hone se prevent karne ke liye.
+`const` is used to prevent a variable's value from being modified.
+
+### Example
 
 ```c
 const int x = 10;
@@ -375,11 +392,11 @@ const int x = 10;
 
 ---
 
-## 11.2 volatile
+## 11.2 `volatile`
 
-Compiler ko indicate karta hai ki variable ki value program ke normal flow ke bahar change ho sakti hai.
+`volatile` tells the compiler that the value of a variable may change outside the normal flow of the program.
 
-Common use:
+### Common Uses
 
 → Hardware Registers
 → Interrupt-related Variables
@@ -387,17 +404,17 @@ Common use:
 
 ---
 
-## 11.3 restrict
+## 11.3 `restrict`
 
-`restrict` pointer qualifier hai.
+`restrict` is a **pointer qualifier**.
 
-Yeh compiler ko pointer access ke regarding optimization assumptions provide karta hai.
+It provides the compiler with information that can help with pointer-related optimization.
 
 ---
 
 # 12. STORAGE CLASS
 
-C mein four important Storage-Class Specifiers:
+There are four important Storage-Class Specifiers in C:
 
 1. `auto`
 2. `extern`
@@ -406,9 +423,11 @@ C mein four important Storage-Class Specifiers:
 
 ---
 
-## 12.1 auto
+## 12.1 `auto`
 
-Local variables ke liye default storage class.
+`auto` is the default storage class for local variables.
+
+### Example
 
 ```c
 auto int x = 10;
@@ -416,9 +435,11 @@ auto int x = 10;
 
 ---
 
-## 12.2 extern
+## 12.2 `extern`
 
-Variable/function ki definition kisi other file/place par ho sakti hai, ye indicate karta hai.
+`extern` indicates that the definition of a variable or function may exist in another file or location.
+
+### Example
 
 ```c
 extern int x;
@@ -426,9 +447,11 @@ extern int x;
 
 ---
 
-## 12.3 register
+## 12.3 `register`
 
-Compiler ko suggest karta hai ki variable ko fast-access storage/register mein rakhna useful ho sakta hai.
+`register` suggests that a variable may benefit from fast-access storage/register.
+
+### Example
 
 ```c
 register int i;
@@ -436,9 +459,11 @@ register int i;
 
 ---
 
-## 12.4 static
+## 12.4 `static`
 
-Variable ki lifetime/scope behavior ko control karta hai.
+`static` affects the lifetime and/or linkage of a variable depending on where it is declared.
+
+### Example
 
 ```c
 static int count = 0;
@@ -448,7 +473,7 @@ static int count = 0;
 
 # 13. C89 / C90 — 32 KEYWORDS
 
-C89/C90 mein total **32 keywords** hote hain.
+C89/C90 contains a total of **32 keywords**.
 
 ---
 
@@ -523,3 +548,108 @@ C89/C90 mein total **32 keywords** hote hain.
 3. `volatile`
 
 ---
+
+# TOTAL = 32 KEYWORDS
+
+```text
+Data Type Keywords     → 5
+Decision Making        → 5
+Looping                → 3
+Jump Statements        → 4
+Storage Class          → 4
+Type Modifiers         → 4
+User-Defined Types     → 4
+Other Keywords         → 3
+                         ───
+TOTAL                  → 32
+```
+
+### Complete 32 Keywords
+
+```text
+auto
+break
+case
+char
+const
+continue
+default
+do
+double
+else
+enum
+extern
+float
+for
+goto
+if
+int
+long
+register
+return
+short
+signed
+sizeof
+static
+struct
+switch
+typedef
+union
+unsigned
+void
+volatile
+while
+```
+
+### Important Note
+
+`class` is **not a C89 keyword**.
+
+`class` is a **C++ keyword**.
+
+---
+
+# 14. COMPILER
+
+A **Compiler** translates source code into object code or executable code.
+
+### Basic Flow
+
+```text
+Source Code
+     ↓
+Compiler
+     ↓
+Object / Executable Code
+     ↓
+Run
+```
+
+### Examples
+
+→ C
+→ C++
+
+---
+
+# 15. INTERPRETER
+
+An **Interpreter** processes/executes source code at runtime rather than producing a traditional standalone executable in the same way as a typical ahead-of-time compiler.
+
+### Simplified Flow
+
+```text
+Source Code
+     ↓
+Interpreter
+     ↓
+Execute
+```
+
+### Example
+
+→ Python
+
+### Important Note
+
+Modern language implementation
