@@ -132,4 +132,102 @@ Touch 1.C ( create 1.c ( name file ))
 ls -a ( list all )
 rm 2.c (remove / Delete )
 
+Q. why int main is used in c and C++ coding
+
+Operating System
+       ↓
+    main()
+       ↓
+   printf()
+       ↓
+  return 0
+       ↓
+Program ends successfully
+
+
+--> main() = program yahin se start hota hai.
+--> int = program end hone par ek integer/status return karega.
+--> return 0 = program successfully complete hua.
+
+
+Introduction of Taiga
+---> Project manager tool
+---> Planning
+---> Team member
+---> Progress & Reposting
+
+project management
+---> Taiga( ALM )
+---> Team 
+------> member
+------> Role & Responsibility
+
+Rules :-
+ ---> Scrum master 
+ ====> Developer :
+     ------> webTech
+     ------> Embeded
+     ------> PM
+
+----->Facilitator
+----->Procuct owner
+------>Tester
+------> Reviewer
+
+
+=> DSM ( Daily Statement Meeting ) 
+--->  Yesterdat
+--->  Today
+--->  Bottel Nacks
+
+==> Task
+
+
+***** SDLC *****
+-> waterfall model
+-> v - model
+-> spring
+-> Agile / scrame  
+             :- Agile / scrame is a tool and we use scrame as a scrame master
+
+Civilization ( samuday )
+---> Stone Age
+---> Mental Age
+---> Agriculture Age
+
+=> Digital Age (start 1947 )
+1947 ------> 90's
+
+=> information Age
+----> Internet
+
+=> knowladge Age
+
+
+Artificial Intelligence ( AI )
+=> Democratization of Intelligence
+
+=> post AI Age
+--> Evidance ( varification & validation )
+-----> productivity ( x 100 ( worst / fast ))
+
+
+Decision Making:-
+=> Trust 
+=> Accuntability ( zimmadar )
+=> Execution ( Evidance )
+
+==> Mental model 
+----> Invension
+"shing object syndrome"
+
+
+ ***** SDLC *****
+ --> "Softwere Development life Cycle"
+          System
+             |
+      ---> Softwere 
+      ---> Process of execution
+      ---> Hardwere
+
 
